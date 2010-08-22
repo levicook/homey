@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+def number?(val)
+  val =~ /^\d*\.*\d*$/
+end
+
+histogram = {}
+histogram.default = 0
+
+ARGF.each_line do |line|
+  line.strip!
+  key, val = line.split(/\s/, 2)
+  if number?(val)
+    histogram[key] += val.to_f
+  else
+    histogram[key] += 1
+  end
+end
+
+longest_key = histogram.keys.inject do |memo, key|
+  memo.length > key.length ? memo : key
+end
+
+longest_val = histogram.values.inject do |memo, val|
+  String(memo).length > String(val).length ? memo : val
+end
+
+results = histogram.sort do |pair1, pair2|
+  (pair2.last <=> pair1.last).nonzero? || (pair2.first <=> pair1.first).nonzero? || 0
+end
+
+results.each do |key, val|
+  print '[', key, ']'.ljust((longest_key.length+2) - key.length), ' '
+  print String(val).rjust(String(longest_val).length)
+  puts
+end
+
+full_width = longest_key.length + 4 + String(longest_val).length
+total = results.inject(0) { |memo, result| memo += result.last }
+
+puts '-' * full_width
+puts String(total).rjust(full_width)

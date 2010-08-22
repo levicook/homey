@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+ANSI_COLORS = /\x1B\[[0-9;]*[mK]/
+ARGF.each_line { |line| puts line.gsub!(ANSI_COLORS, '') }
