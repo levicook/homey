@@ -1,0 +1,82 @@
+" Needed on some linux distros.
+" see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
+filetype off 
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
+
+set nocompatible " i would like to use vim please
+
+set autoindent   " Copy indent from current line when starting a new line (typing <CR>
+set expandtab    " Use the appropriate number of spaces to insert a <Tab>
+set grepprg=ack  " Program to use for the :grep command.
+set incsearch    " While typing a search command, show where the pattern, as it was typed so far, matches. 
+set nowrap       " don't wrap lines longer than the width of the window
+set shiftwidth=2 " Number of spaces to use for each step of (auto)indent. 
+set tabstop=2    " Number of spaces that a <Tab> in the file counts for.
+
+syntax enable    " switch on syntax highlighting
+
+map <leader>f :Ack<space>
+map <leader>t :NERDTreeToggle<CR>
+
+" Quick fix navigation (next error, prev error, etc)
+map ne :cnext<CR>
+map pe :cprev<CR>
+map nf :cnfile<CR>
+map pf :cpfile<CR>
+
+" bind command-] to shift right
+nmap <D-]> >>
+vmap <D-]> >>
+imap <D-]> <C-O>>>
+
+" bind command-[ to shift left
+nmap <D-[> <<
+vmap <D-[> <<
+imap <D-[> <C-O><<
+
+" open tabs with command-<tab number>
+map <silent> <D-1> :tabn 1<CR>
+map <silent> <D-2> :tabn 2<CR>
+map <silent> <D-3> :tabn 3<CR>
+map <silent> <D-4> :tabn 4<CR>
+map <silent> <D-5> :tabn 5<CR>
+map <silent> <D-6> :tabn 6<CR>
+map <silent> <D-7> :tabn 7<CR>
+map <silent> <D-8> :tabn 8<CR>
+map <silent> <D-9> :tabn 9<CR>
+
+" not sure I need the rest of this anymore, but don't want to nuke
+" it just yet.
+
+autocmd BufRead *.erb set filetype=eruby
+autocmd BufRead *.go set filetype=go
+autocmd BufRead *.rhtml set filetype=eruby
+autocmd BufRead *.ru set filetype=ruby
+autocmd BufRead Gemfile set filetype=ruby
+autocmd BufRead Vagrantfile set filetype=ruby
+
+filetype plugin indent on
+
+runtime! macros/matchit.vim
+
+set viminfo^=! 
+
+if filereadable("~/dbext.local.vim")
+  source ~/dbext.local.vim
+endif
+
+" Source a local configuration file if available.
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
+
+" rails.vim configuration
+let g:rails_abbreviations = 0
+
+" supertab configuration
+" let g:SuperTabDefaultCompletionType = "context"
+
+
+
