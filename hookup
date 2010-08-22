@@ -10,3 +10,5 @@ DOT_VIM="${HOMEY}/dot_vim"
 [ -e "${HOME}/.vim" ] || ln -v -s "${DOT_VIM}" "${HOME}/.vim"
 [ -e "${HOME}/.vimrc" ] || ln -v -s "${DOT_VIM}/dot_vimrc" "${HOME}/.vimrc"
 [ -e "${HOME}/.gvimrc" ] || ln -v -s "${DOT_VIM}/dot_gvimrc" "${HOME}/.gvimrc"
+
+cd "${DOT_VIM}" && ./update_bundles
