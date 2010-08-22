@@ -6,7 +6,11 @@ set -o vi
 export EDITOR=vim
 export VISUAL=vim
 
-if [ -d $HOME/bin ]; then
+if [ -d ${HOME}/Dropbox/homey ]; then
+  export PATH=${HOME}/Dropbox/homey:$PATH
+fi
+
+if [ -d ${HOME}/bin ]; then
   export PATH=$HOME/bin:$PATH
 fi
 
@@ -16,6 +20,6 @@ if [ -f /usr/local/etc/bash_completion ]; then
   source /usr/local/etc/bash_completion
 fi
 
-if [ -f ~/.bash_profile.local ]; then
-  source ~/.bash_profile.local
+if [ -f ${HOME}/.bash_profile.local ]; then
+  source ${HOME}/.bash_profile.local
 fi

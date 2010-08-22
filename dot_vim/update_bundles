@@ -20,8 +20,8 @@ git clone "git://github.com/$1/$2.git"
 get_bundle alowe vim-slurper
 get_bundle duff vim-bufonly
 get_bundle godlygeek tabular
-get_bundle levicook vim-moria
 get_bundle leshill vim-json
+get_bundle levicook vim-moria
 get_bundle mileszs ack.vim
 get_bundle pangloss vim-javascript
 get_bundle scrooloose nerdcommenter
@@ -48,3 +48,4 @@ get_bundle tsaleh vim-align
 get_bundle tsaleh vim-supertab
 get_bundle vim-ruby vim-ruby
 get_bundle wgibbs vim-irblack
+get_bundle zklinger dbext
