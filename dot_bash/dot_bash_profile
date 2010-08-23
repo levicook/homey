@@ -6,8 +6,8 @@ set -o vi
 export EDITOR=vim
 export VISUAL=vim
 
-if [ -d ${HOME}/Dropbox/homey ]; then
-  export PATH=${HOME}/Dropbox/homey:$PATH
+if [ -d ${HOME}/homey ]; then
+  export PATH=${HOME}/homey:$PATH
 fi
 
 if [ -d ${HOME}/bin ]; then
