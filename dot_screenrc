@@ -1,0 +1,6 @@
+caption always "%n(%t) : %C"
+defscrollback 50000
+hardstatus on
+shell -bash
+startup_message off
+termcapinfo xterm ti@:te@

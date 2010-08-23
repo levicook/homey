@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 
+
 HOMEY=`dirname $0`
 [ -e "${HOME}/homey" ] || ln -v -s "${HOMEY}" "${HOME}/homey"
+[ -e "${HOME}/.screenrc" ] || ln -v -s "${HOMEY}/dot_screenrc" "${HOME}/.screenrc"
+
 
 DOT_BASH="${HOMEY}/dot_bash"
 [ -e "${HOME}/.bashrc" ] || ln -v -s "${DOT_BASH}/dot_bashrc" "${HOME}/.bashrc"
 [ -e "${HOME}/.bash_profile" ] || ln -v -s "${DOT_BASH}/dot_bash_profile" "${HOME}/.bash_profile"
 
+
 DOT_VIM="${HOMEY}/dot_vim"
 [ -e "${HOME}/.vim" ] || ln -v -s "${DOT_VIM}" "${HOME}/.vim"
 [ -e "${HOME}/.vimrc" ] || ln -v -s "${DOT_VIM}/dot_vimrc" "${HOME}/.vimrc"
 [ -e "${HOME}/.gvimrc" ] || ln -v -s "${DOT_VIM}/dot_gvimrc" "${HOME}/.gvimrc"
+
 
 cd "${DOT_VIM}" && ./update_bundles
