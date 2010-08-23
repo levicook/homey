@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 HOMEY=`dirname $0`
+[ -e "${HOME}/homey" ] || ln -v -s "${HOMEY}" "${HOME}/homey"
 
 DOT_BASH="${HOMEY}/dot_bash"
 [ -e "${HOME}/.bashrc" ] || ln -v -s "${DOT_BASH}/dot_bashrc" "${HOME}/.bashrc"
