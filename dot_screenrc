@@ -4,3 +4,14 @@ hardstatus on
 shell -bash
 startup_message off
 termcapinfo xterm ti@:te@
+
+
+chdir $PWD
+screen -t bash 0 bash -c "cd \"$PWD\" && bash --login"
+at 0 stuff "rvm ree \015"
+
+screen -t vim 1 bash -c "cd \"$PWD\" && bash --login"
+at 1 stuff "rvm ree \015"
+at 1 stuff "vim \015"
+
+select 0
