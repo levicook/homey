@@ -19,6 +19,7 @@ syntax enable    " switch on syntax highlighting
 
 map <leader>f :Ack<space>
 map <leader>t :NERDTreeToggle<CR>
+map ,c <leader>c
 
 " Quick fix navigation (next error, prev error, etc)
 map ne :cnext<CR>
