@@ -6,6 +6,18 @@ set -o vi
 export EDITOR=vim
 export VISUAL=vim
 
+if [ -d /usr/local/lib/node ]; then
+  export NODE_PATH=/usr/local/lib/node
+fi
+
+if [ -d /usr/local/share/npm/bin ]; then
+  export PATH=/usr/local/share/npm/bin:$PATH
+fi
+
+if [ -d /usr/local/sbin ]; then
+  export PATH=/usr/local/sbin:$PATH
+fi
+
 if [ -d ${HOME}/homey ]; then
   export PATH=${HOME}/homey:$PATH
 fi
@@ -13,17 +25,6 @@ fi
 if [ -d ${HOME}/bin ]; then
   export PATH=$HOME/bin:$PATH
 fi
-
-if [ -d /usr/local/share/npm/bin ]; then
-  export PATH=/usr/local/share/npm/bin:$PATH
-fi
-
-if [ -d /usr/local/lib/node ]; then
-  export NODE_PATH=/usr/local/lib/node
-else
-  echo "Skipping NODE_PATH"
-fi
-
 
 PROMPT_COMMAND=prompt_func
 
