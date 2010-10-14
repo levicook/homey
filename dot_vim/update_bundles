@@ -48,6 +48,7 @@ get_bundle tpope vim-unimpaired
 get_bundle tpope vim-vividchalk
 get_bundle tsaleh vim-align
 get_bundle tsaleh vim-supertab
+get_bundle vim-scripts molokai
 get_bundle vim-ruby vim-ruby
 get_bundle wgibbs vim-irblack
 get_bundle zklinger dbext

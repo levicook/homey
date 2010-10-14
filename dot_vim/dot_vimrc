@@ -16,7 +16,7 @@ set shiftwidth=2 " Number of spaces to use for each step of (auto)indent.
 set tabstop=2    " Number of spaces that a <Tab> in the file counts for.
 set autoread     " automatically read files changed outside of vim
 
-set virtualedit block
+set virtualedit=block
 
 syntax enable    " switch on syntax highlighting
 
