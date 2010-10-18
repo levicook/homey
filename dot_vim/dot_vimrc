@@ -50,10 +50,16 @@ map <silent> <D-6> :tabn 6<CR>
 map <silent> <D-7> :tabn 7<CR>
 map <silent> <D-8> :tabn 8<CR>
 map <silent> <D-9> :tabn 9<CR>
+  
+" fast window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 
 " not sure I need the rest of this anymore, but don't want to nuke
 " it just yet.
-
 autocmd BufRead *.erb set filetype=eruby
 autocmd BufRead *.go set filetype=go
 autocmd BufRead *.rhtml set filetype=eruby
