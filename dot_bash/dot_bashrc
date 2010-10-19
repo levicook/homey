@@ -21,6 +21,7 @@ alias c=clear
 alias d='ls -bF'
 alias ls='ls -G'
 alias ll='ls -l'
+alias ss='stty sane'
 
 # Colours
         RED="\[\033[0;31m\]"
