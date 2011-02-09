@@ -17,7 +17,7 @@ git clone "git://github.com/$1/$2.git"
   )
 }
 
-get_bundle Townk vim-autoclose
+#get_bundle Townk vim-autoclose
 get_bundle alowe vim-slurper
 get_bundle digitaltoad vim-jade
 get_bundle duff vim-bufonly
