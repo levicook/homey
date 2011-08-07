@@ -3,8 +3,8 @@ type -t prompt_func || source ${HOME}/.bashrc
 
 set -o vi
 
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
 
 if [ -d ~/phonegap/phonegap-android/bin ]; then
   export PATH=~/phonegap/phonegap-android/bin:$PATH
