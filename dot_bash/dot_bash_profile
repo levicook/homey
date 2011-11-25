@@ -23,7 +23,8 @@ if [ -d /usr/local/sbin ]; then
 fi
 
 if [ -d ${HOME}/homey ]; then
-  export PATH=${HOME}/homey:$PATH
+  export HOMEY=${HOME}/homey
+  export PATH=${HOMEY}:$PATH
 fi
 
 if [ -d ${HOME}/bin ]; then

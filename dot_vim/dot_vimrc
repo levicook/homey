@@ -88,8 +88,15 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
+
+" set path to dot_vim
+let g:dot_vim_home = expand($HOMEY) . '/dot_vim'
+
 " rails.vim configuration
 let g:rails_abbreviations = 0
+
+" snipMate configuration
+let g:snippets_dir = g:dot_vim_home . '/snippets'
 
 " supertab configuration
 " let g:SuperTabDefaultCompletionType = "context"
