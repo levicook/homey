@@ -18,14 +18,17 @@ set shiftwidth=2 " Number of spaces to use for each step of (auto)indent.
 set tabstop=2    " Number of spaces that a <Tab> in the file counts for.
 set autoread     " automatically read files changed outside of vim
 
+set listchars=tab:▷⋅,trail:·
+set list
+
 set virtualedit=block
 
 syntax enable    " switch on syntax highlighting
 
-map <leader>b :NERDTreeFromBookmark<space>
 map <leader>f :Ack<space>
-map <leader>t :NERDTreeToggle<CR>
-map ,c <leader>c
+"Disabling these to experiment with Command-T plugin:
+"map <leader>b :NERDTreeFromBookmark<space>
+"map <leader>t :NERDTreeToggle<CR>
 
 " Quick fix navigation (next error, prev error, etc)
 map ne :cnext<CR>
@@ -90,6 +93,9 @@ let g:rails_abbreviations = 0
 
 " supertab configuration
 " let g:SuperTabDefaultCompletionType = "context"
+
+" Let Command-T know what we'd like to ignore.
+set wildignore+=*.o,*.obj,.git
 
 
 " When editing a file, always jump to the last cursor position

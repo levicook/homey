@@ -42,4 +42,5 @@ get_bundle tpope vim-unimpaired
 get_bundle tpope vim-vividchalk
 get_bundle tsaleh vim-align
 get_bundle vim-ruby vim-ruby
+get_bundle wincent Command-T
 get_bundle zklinger dbext
