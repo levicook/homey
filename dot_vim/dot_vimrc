@@ -104,6 +104,7 @@ let g:snippets_dir = g:dot_vim_home . '/snippets'
 " Let Command-T know what we'd like to ignore.
 set wildignore+=*.o,*.obj,.git
 
+colorscheme solarized " and finally, set our colorscheme last
 
 " When editing a file, always jump to the last cursor position
 au BufReadPost *
