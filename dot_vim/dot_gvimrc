@@ -3,5 +3,5 @@ set fuoptions=maxvert,maxhorz " fullscreen maximizes vertically AND horizontally
 set guifont=Inconsolata:h13   " This is a list of fonts which will be used for the GUI version of Vim.
 set guioptions-=T             " No toolbar
 set printfont=courier:h8      " The name of the font that will be used for :hardcopy.
-set background=dark           " When set to dark, Vim will try to use colors that look good on a dark background. 
-colorscheme moria             " and finally, set our colorscheme last
+"set background=dark           " When set to dark, Vim will try to use colors that look good on a dark background. 
+"colorscheme evening           " and finally, set our colorscheme last

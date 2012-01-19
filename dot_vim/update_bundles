@@ -19,12 +19,13 @@ git clone "git://github.com/$1/$2.git"
 
 get_bundle Raimondi delimitMate
 get_bundle ajf puppet-vim
+get_bundle altercation vim-colors-solarized
 get_bundle juvenn mustache.vim
 get_bundle leshill vim-json
-get_bundle levicook vim-moria
 get_bundle mileszs ack.vim
 get_bundle msanders snipmate.vim
 get_bundle pangloss vim-javascript
+get_bundle rodjek vim-puppet
 get_bundle scrooloose nerdcommenter
 get_bundle scrooloose nerdtree
 get_bundle therubymug vim-pyte
@@ -46,4 +47,5 @@ get_bundle tpope vim-vividchalk
 get_bundle tsaleh vim-align
 get_bundle vim-ruby vim-ruby
 get_bundle wincent Command-T
+get_bundle xaviershay tslime.vim
 get_bundle zklinger dbext

@@ -22,6 +22,7 @@ alias d='ls -bF'
 alias ls='ls -G'
 alias ll='ls -l'
 alias ss='stty sane'
+alias tmux="TERM=screen-256color-bce tmux"
 
 # Colours
         RED="\[\033[0;31m\]"
