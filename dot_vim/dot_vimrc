@@ -101,8 +101,9 @@ let g:snippets_dir = g:dot_vim_home . '/snippets'
 " supertab configuration
 " let g:SuperTabDefaultCompletionType = "context"
 
-" Let Command-T know what we'd like to ignore.
-set wildignore+=*.o,*.obj,.git
+" Command-T configuration
+let g:CommandTMaxHeight = 20
+let g:CommandTMatchWindowReverse = 1
 
 colorscheme solarized " and finally, set our colorscheme last
 
