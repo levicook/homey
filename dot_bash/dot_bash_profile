@@ -3,6 +3,11 @@ type -t prompt_func || source ${HOME}/.bashrc
 
 set -o vi
 
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWSTASHSTATE=true
+
+export PROMPT_COMMAND=prompt_func
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
@@ -30,8 +35,6 @@ fi
 if [ -d ${HOME}/bin ]; then
   export PATH=$HOME/bin:$PATH
 fi
-
-PROMPT_COMMAND=prompt_func
 
 if [ -f /usr/local/etc/bash_completion ]; then
   source /usr/local/etc/bash_completion
