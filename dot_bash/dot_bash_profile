@@ -3,20 +3,8 @@ type -t prompt_func || source ${HOME}/.bashrc
 
 set -o vi
 
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
-
-if [ -d ~/phonegap/phonegap-android/bin ]; then
-  export PATH=~/phonegap/phonegap-android/bin:$PATH
-fi
-
-if [ -d /usr/local/lib/node ]; then
-  export NODE_PATH=/usr/local/lib/node
-fi
-
-if [ -d /usr/local/share/npm/bin ]; then
-  export PATH=/usr/local/share/npm/bin:$PATH
-fi
+export EDITOR=vim
+export VISUAL=vim
 
 if [ -d /usr/local/sbin ]; then
   export PATH=/usr/local/sbin:$PATH
