@@ -2,8 +2,9 @@
 
 
 HOMEY=`dirname $0`
-[ -e "${HOME}/homey" ] || ln -v -s "${HOMEY}" "${HOME}/homey"
-[ -e "${HOME}/.screenrc" ] || ln -v -s "${HOMEY}/dot_screenrc" "${HOME}/.screenrc"
+[ -e "${HOME}/homey"      ] || ln -v -s "${HOMEY}" "${HOME}/homey"
+[ -e "${HOME}/.screenrc"  ] || ln -v -s "${HOMEY}/dot_screenrc"  "${HOME}/.screenrc"
+[ -e "${HOME}/.tmux.conf" ] || ln -v -s "${HOMEY}/dot_tmux.conf" "${HOME}/.tmux.conf"
 
 
 DOT_BASH="${HOMEY}/dot_bash"
