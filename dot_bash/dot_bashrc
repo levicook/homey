@@ -8,12 +8,8 @@ if [ -f "${HOME}/bashrc.local" ]; then
   source "${HOME}/bashrc.local"
 fi
 
-if [[ -s /usr/local/rvm/scripts/rvm ]]; then
-  source /usr/local/rvm/scripts/rvm;
-fi
-
 if [[ -s ~/.rvm/scripts/rvm ]]; then
-  source ~/.rvm/scripts/rvm;
+  source ~/.rvm/scripts/rvm
 fi
 
 # User specific aliases and functions
