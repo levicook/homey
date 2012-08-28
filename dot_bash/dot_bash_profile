@@ -1,5 +1,6 @@
 # .bash_profile
 type -t prompt_func || source ${HOME}/.bashrc
+export PROMPT_COMMAND=prompt_func
 
 set -o vi
 
