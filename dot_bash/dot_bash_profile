@@ -10,6 +10,8 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWSTASHSTATE=true
 
+export NODE_PATH=/usr/local/lib/node_modules
+
 if [ -d /usr/local/sbin ]; then
   export PATH=/usr/local/sbin:$PATH
 fi

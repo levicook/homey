@@ -21,6 +21,7 @@ get_bundle Raimondi delimitMate
 get_bundle ajf puppet-vim
 get_bundle altercation vim-colors-solarized
 get_bundle chriskempson vim-tomorrow-theme
+get_bundle digitaltoad vim-jade
 get_bundle jnwhiteh vim-golang
 get_bundle juvenn mustache.vim
 get_bundle leshill vim-json
