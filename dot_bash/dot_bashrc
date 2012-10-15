@@ -1,16 +1,11 @@
 # global definitions
 if [ -f /etc/bashrc ]; then
-  source /etc/bashrc
+	source /etc/bashrc
 fi
 
-# local definitions
-if [ -f "${HOME}/bashrc.local" ]; then
-  source "${HOME}/bashrc.local"
-fi
-
-if [[ -s ~/.rvm/scripts/rvm ]]; then
-  source ~/.rvm/scripts/rvm
-fi
+# if [[ -s ~/.rvm/scripts/rvm ]]; then
+# 	source ~/.rvm/scripts/rvm
+# fi
 
 # User specific aliases and functions
 alias c=clear

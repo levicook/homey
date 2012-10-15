@@ -40,8 +40,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-
 filetype plugin indent on
 
 runtime! macros/matchit.vim
