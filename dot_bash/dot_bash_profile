@@ -34,11 +34,8 @@ if [ -f /usr/local/etc/bash_completion ]; then
   source /usr/local/etc/bash_completion
 fi
 
-if [ ! -d ${HOME}/go ]; then
-	mkdir -p ${HOME}/go/{bin,src,pkg}
-fi
-
+mkdir -p ${HOME}/go/{bin,src,pkg}
 export GOPATH=${HOME}/go
 export PATH=${HOME}/go/bin:$PATH
 
-# [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion

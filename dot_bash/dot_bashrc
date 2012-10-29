@@ -3,16 +3,23 @@ if [ -f /etc/bashrc ]; then
 	source /etc/bashrc
 fi
 
-# if [[ -s ~/.rvm/scripts/rvm ]]; then
-# 	source ~/.rvm/scripts/rvm
-# fi
+if [[ -s ~/.rvm/scripts/rvm ]]; then
+	source ~/.rvm/scripts/rvm
+fi
 
 # User specific aliases and functions
+alias b='bundle'
+alias be='bundle exec'
 alias c=clear
 alias d='ls -bF'
-alias ls='ls -G'
+alias gs='git status'
 alias ll='ls -l'
+alias ls='ls -G'
+alias pull='git pull'
+alias push='git push'
+alias pp='git pull && git push'
 alias ss='stty sane'
+alias t='todo.sh'
 
 # Colours
         RED="\[\033[0;31m\]"
