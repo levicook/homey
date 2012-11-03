@@ -13,11 +13,12 @@ alias be='bundle exec'
 alias c=clear
 alias d='ls -bF'
 alias gs='git status'
+alias guard='bundle exec guard'
 alias ll='ls -l'
 alias ls='ls -G'
+alias pp='git pull && git push'
 alias pull='git pull'
 alias push='git push'
-alias pp='git pull && git push'
 alias ss='stty sane'
 alias t='todo.sh'
 
