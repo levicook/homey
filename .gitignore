@@ -1,3 +1,6 @@
 dot_vim/.netrwhist
 dot_vim/bundle
+dot_vim/doc/
+dot_vim/plugin/
+dot_vim/ruby/
 *.swp
