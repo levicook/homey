@@ -19,7 +19,7 @@ set shiftwidth=2 " Number of spaces to use for each step of (auto)indent.
 set tabstop=2    " Number of spaces that a <Tab> in the file counts for.
 set autoread     " automatically read files changed outside of vim
 
-set listchars=tab:▷⋅,trail:·
+"set listchars=tab:▷⋅,trail:·
 "set list
 
 set virtualedit=block
@@ -27,6 +27,8 @@ set virtualedit=block
 syntax enable    " switch on syntax highlighting
 
 map <leader>f :Ack<space>
+
+map pt :tabp<CR>
 
 " Quick fix navigation (next error, prev error, etc)
 map ne :cnext<CR>
