@@ -13,6 +13,10 @@ export GIT_PS1_SHOWSTASHSTATE=true
 
 export NODE_PATH=/usr/local/lib/node_modules
 
+if [ -d "/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin" ]; then
+	export PATH="/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin":$PATH
+fi
+
 if [ -d /usr/local/share/npm/bin ]; then
   export PATH=/usr/local/share/npm/bin:$PATH
 fi
