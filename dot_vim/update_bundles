@@ -24,11 +24,13 @@ get_bundle chriskempson vim-tomorrow-theme
 get_bundle digitaltoad vim-jade
 get_bundle jnwhiteh vim-golang
 get_bundle juvenn mustache.vim
+get_bundle kchmck vim-coffee-script
 get_bundle leshill vim-json
 get_bundle mileszs ack.vim
 get_bundle msanders snipmate.vim
 get_bundle pangloss vim-javascript
 get_bundle rodjek vim-puppet
+get_bundle saltstack salt-vim
 get_bundle scrooloose nerdcommenter
 get_bundle scrooloose nerdtree
 get_bundle therubymug vim-pyte

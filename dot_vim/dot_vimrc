@@ -23,6 +23,7 @@ set autoread     " automatically read files changed outside of vim
 "set list
 
 set virtualedit=block
+set clipboard=unnamed
 
 syntax enable    " switch on syntax highlighting
 
@@ -68,3 +69,5 @@ au BufReadPost *
       \         exe "normal g'\"" |
       \     endif |
       \ endif
+
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
